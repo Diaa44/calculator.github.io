@@ -8,7 +8,8 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 10rem;
+       margin-top: 2rem;
+    margin-bottom: 1rem;
     background-color: #13223D;
 }
 
