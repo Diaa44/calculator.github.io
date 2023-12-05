@@ -8,10 +8,11 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-       margin-top: 2rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: #13223D;
 }
+
 
 input {
     width: 100px;
