@@ -1,11 +1,14 @@
 const output = document.getElementById('output');
 
 function display(value) {
-    output.value += value;
-}
+    const lastChar = output.value.slice(-1);
+    const isLastCharOperator = ['+', '-', '*', '%'].includes(lastChar);
 
-function AC() {
-    output.value = '';
+    if (isLastCharOperator && ['+', '-', '*', '%'].includes(value)) {
+        output.value = output.value.slice(0, -1) + value;
+    } else {
+        output.value += value;
+    }
 }
 
 function calculate() {
@@ -14,6 +17,10 @@ function calculate() {
     } catch (error) {
         output.value = 'Error';
     }
+}
+
+function AC() {
+    output.value = '';
 }
 
 window.display = display;
